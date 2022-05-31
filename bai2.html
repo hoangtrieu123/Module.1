@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let array = [5,2,3,4,10,6,0,9,8]
+  let x = +prompt('nhập 1 số nguyên')
+  tryRemoveFromArray(array,x)
+  function tryRemoveFromArray(arr,b) {
+    let array2 =[]
+    let flag = false
+    for (let i=0;i<arr.length;i++) {
+      if (b == arr[i]){
+        return  arr.splice(i,1)
+      }else{
+        flag = true
+      }
+    }
+    if (flag==true){
+      return arr
+    }
+  }
+  document.write(tryRemoveFromArray(array,x))
+</script>
+</html>

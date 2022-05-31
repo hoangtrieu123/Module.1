@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function findMax(array){
+        let max = array[0];
+        for (let i=0;i<array.length;i++){
+            if(max<array[i]) {
+                max= array[i];
+            }
+        }
+        return max;
+    }
+    let arr = [3,4,5,2,3,1,8,9,10]
+    let result = findMax(arr)
+    document.write("Điểm cao nhất là: " + result);
+</script>
+</html>

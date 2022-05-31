@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let num = +prompt("Nhập vào số cần kiểm tra xem có nằm trong dãy Fibonacci không: ")
+  function isFibonacci(num) {
+    let a = 1;
+    let b = 1;
+    let c;
+    do {
+      c = a + b;
+      a = b;
+      b = c;
+    } while (c < num)
+    if (num === 1 ||c===num) {
+      return true;
+    } else {
+      return false;
+    }
+  }document.write(isFibonacci(num))
+</script>
+</html>
